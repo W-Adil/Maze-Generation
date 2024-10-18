@@ -1,0 +1,119 @@
+/* Style for the maze container */
+body{
+    background: gray;
+}
+
+
+.maze_generation{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.maze{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.key_image{
+    max-width: 20px;
+    max-height: auto;
+    margin-top: 190px;
+    margin-right: 5px;
+}
+
+.home_image{
+    max-height: auto;
+    max-width: 20px;
+    margin-bottom: 175px;
+    margin-left: 5px;
+}
+
+#maze-container {
+    display: grid;
+    margin-top: 1px;
+    grid: 1;
+}
+
+/* General style for each cell in the maze */
+.maze-cell {
+    width: 20px; /* Width of each cell */
+    height: 20px; /* Height of each cell */
+    box-sizing: border-box;
+}
+
+/* Styling for the walls of the maze cells */
+.top-wall {
+    border-top: 2px solid #333;
+}
+
+.right-wall {
+    border-right: 2px solid #333;
+}
+
+.bottom-wall {
+    border-bottom: 2px solid #333;
+}
+
+.left-wall {
+    border-left: 2px solid #333;
+}
+
+/* Optional: Add hover effect for maze cells */
+.maze-cell:hover {
+    background-color: #f0f0f0;
+}
+
+.buttons{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    flex: 0.5rem;
+    padding: 1rem;
+}
+
+.buttons button{
+    margin: 1rem;
+    background: #333;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.buttons button:hover{
+    box-shadow: 0 4px 6px rgba(0,0,0,1);
+}
+
+.visited {
+    background-color: #FFD54F; /* Choose a color for visited cells */
+}
+
+/* Style for the path cells */
+.path {
+    background-color: #4CAF50; /* Choose a color for the correct path */
+}
+    
+
+.moves-info {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.maze-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will cover the entire cell area */
+}
